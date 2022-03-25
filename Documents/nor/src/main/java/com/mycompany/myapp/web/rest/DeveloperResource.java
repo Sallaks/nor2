@@ -2,6 +2,7 @@ package com.mycompany.myapp.web.rest;
 
 import com.mycompany.myapp.projections.AmountDevByAge;
 import com.mycompany.myapp.projections.AmountDevsBySkill;
+import com.mycompany.myapp.projections.AvgOfDevsAgeBySkill;
 import com.mycompany.myapp.repository.DeveloperRepository;
 import com.mycompany.myapp.service.DeveloperService;
 import com.mycompany.myapp.service.dto.DeveloperDTO;
@@ -208,6 +209,11 @@ public class DeveloperResource {
     @GetMapping("/developers/devs")
     public ResponseEntity<List<AmountDevsBySkill>> devsWithSkills() {
         return new ResponseEntity<>(developerService.getDevsBySkill(), HttpStatus.OK);
+    }
+
+    @GetMapping("/developers/AvgOfDevsAgeBySkill")
+    public ResponseEntity<List<AvgOfDevsAgeBySkill>> getAvgOfDevsAgeBySkill() {
+        return new ResponseEntity<>(developerService.getAvgOfDevsAgeBySkill(), HttpStatus.OK);
     }
 
     /**

@@ -4,6 +4,7 @@ import com.mycompany.myapp.domain.Developer;
 import com.mycompany.myapp.domain.Skill;
 import com.mycompany.myapp.projections.AmountDevByAge;
 import com.mycompany.myapp.projections.AmountDevsBySkill;
+import com.mycompany.myapp.projections.AvgOfDevsAgeBySkill;
 import com.mycompany.myapp.service.dto.DevsBySkillDTO;
 
 import java.util.List;
@@ -53,4 +54,7 @@ public interface DeveloperRepository extends DeveloperRepositoryWithBagRelations
 
     @Query("SELECT s.name AS skillName, COUNT(d.id) AS count FROM Developer d JOIN d.skills s GROUP BY s")
     List<AmountDevsBySkill> getCountDevsBySkill();
+
+    @Query("SELECT s.name AS skillName, AVG(d.age) AS avgAge FROM Developer d JOIN d.skills s GROUP BY s")
+    List<AvgOfDevsAgeBySkill> getAvgOfDevsAgeBySkill();
 }

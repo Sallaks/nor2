@@ -4,6 +4,7 @@ import com.mycompany.myapp.domain.Developer;
 import com.mycompany.myapp.domain.Skill;
 import com.mycompany.myapp.projections.AmountDevByAge;
 import com.mycompany.myapp.projections.AmountDevsBySkill;
+import com.mycompany.myapp.projections.AvgOfDevsAgeBySkill;
 import com.mycompany.myapp.repository.DeveloperRepository;
 import com.mycompany.myapp.repository.SkillRepository;
 import com.mycompany.myapp.service.dto.DeveloperDTO;
@@ -171,12 +172,11 @@ public class DeveloperService {
         return developerRepository.getNumberOfDevsByAge();
     }
 
-    /**
-     * HOLA
-     */
-    // public void getAvgDevsBySkill(){}
-
     public List<AmountDevsBySkill> getDevsBySkill() {
         return developerRepository.getCountDevsBySkill();
+    }
+
+    public List<AvgOfDevsAgeBySkill> getAvgOfDevsAgeBySkill() {
+        return developerRepository.getAvgOfDevsAgeBySkill();
     }
 }
