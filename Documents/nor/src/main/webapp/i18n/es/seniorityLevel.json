@@ -1,0 +1,24 @@
+{
+  "norApp": {
+    "seniorityLevel": {
+      "home": {
+        "title": "Seniority Levels",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Seniority Level",
+        "createOrEditLabel": "Crear o editar Seniority Level",
+        "notFound": "Ningún Seniority Levels encontrado"
+      },
+      "created": "Un nuevo Seniority Level ha sido creado con el identificador {{ param }}",
+      "updated": "Un Seniority Level ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Seniority Level ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Seniority Level {{ id }}?"
+      },
+      "detail": {
+        "title": "Seniority Level"
+      },
+      "id": "ID",
+      "name": "Name"
+    }
+  }
+}

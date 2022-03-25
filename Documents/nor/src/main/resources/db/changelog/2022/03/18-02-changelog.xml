@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd"
+    objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1647612443101-1" author="MangooDev (generated)">
+        <dropForeignKeyConstraint baseTableName="jhi_user_authority" constraintName="fk_authority_name"/>
+    </changeSet>
+    <changeSet id="1647612443101-2" author="MangooDev (generated)">
+        <dropForeignKeyConstraint baseTableName="rel_developer__skill"
+                                  constraintName="fk_rel_developer__skill__developer_id"/>
+    </changeSet>
+    <changeSet id="1647612443101-3" author="MangooDev (generated)">
+        <dropForeignKeyConstraint baseTableName="rel_developer__skill"
+                                  constraintName="fk_rel_developer__skill__skill_id"/>
+    </changeSet>
+    <changeSet id="1647612443101-4" author="MangooDev (generated)">
+        <dropForeignKeyConstraint baseTableName="jhi_user_authority" constraintName="fk_user_id"/>
+    </changeSet>
+    <changeSet id="1647612443101-7" author="MangooDev (generated)">
+        <dropTable cascadeConstraints="true" tableName="jhi_user_authority"/>
+    </changeSet>
+    <changeSet id="1647612443101-8" author="MangooDev (generated)">
+        <dropTable cascadeConstraints="true" tableName="rel_developer__skill"/>
+    </changeSet>
+    <changeSet id="1647612443101-9" author="MangooDev (generated)">
+        <dropColumn columnName="email" tableName="jhi_user"/>
+
+        <dropColumn columnName="id" tableName="jhi_user"/>
+
+        <dropColumn columnName="login" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet id="1647612443101-12" author="MangooDev (generated)">
+        <dropColumn columnName="name" tableName="jhi_authority"/>
+    </changeSet>
+
+</databaseChangeLog>

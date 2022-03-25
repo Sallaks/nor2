@@ -1,0 +1,29 @@
+{
+  "changelogDate": "20220315113548",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "Integer"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Developer",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "skill",
+      "otherEntityRelationshipName": "developer",
+      "ownerSide": true,
+      "relationshipName": "skill",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

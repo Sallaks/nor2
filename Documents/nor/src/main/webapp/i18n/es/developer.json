@@ -1,0 +1,26 @@
+{
+  "norApp": {
+    "developer": {
+      "home": {
+        "title": "Developers",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Developer",
+        "createOrEditLabel": "Crear o editar Developer",
+        "notFound": "Ningún Developers encontrado"
+      },
+      "created": "Un nuevo Developer ha sido creado con el identificador {{ param }}",
+      "updated": "Un Developer ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Developer ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Developer {{ id }}?"
+      },
+      "detail": {
+        "title": "Developer"
+      },
+      "id": "ID",
+      "name": "Name",
+      "age": "Age",
+      "skill": "Skill"
+    }
+  }
+}
